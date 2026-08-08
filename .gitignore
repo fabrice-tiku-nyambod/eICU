@@ -1,0 +1,40 @@
+# ---------------------------------------------------------------------------
+# eICU-CRD is credentialed data under a DUA that forbids redistribution.
+# Every collaborator must be individually credentialed by PhysioNet.
+# NOTHING patient-level may be committed. Aggregates and code only.
+# ---------------------------------------------------------------------------
+
+# Raw PhysioNet downloads
+*.csv.gz
+*.crdownload
+LICENSE.txt
+
+# Any local extract, however small
+data_raw/
+data_private/
+*.parquet
+*.feather
+*.sqlite
+*.duckdb
+
+# Query results pulled down from BigQuery
+results_private/
+
+# Credentials -- never commit
+*.netrc
+*credentials*.json
+.env
+
+# R / Python
+.Rhistory
+.RData
+.Rproj.user/
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
+
+# OS
+Thumbs.db
+.DS_Store
+~$*
